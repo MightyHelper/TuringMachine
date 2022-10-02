@@ -1,0 +1,47 @@
+html,body{
+  background: #121212;
+}
+h1{
+  color: white
+}
+.tapeView{
+  height:2rem;
+  border-top: thin solid white;
+  border-bottom: thin solid white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.tapeElement{
+  font-size: 2rem;
+  font-family: monospace;
+  box-sizing: border-box;
+}
+.tapeElement{
+  color:white;
+}
+.tapeElement.mainTapeElement{
+  border: 3px solid lime;
+}
+.tapeElement.tapeBoundry{
+  color: red;
+}
+.tapeElement.tapeVoid{
+  color: blue;
+  transform: translateY(0.25rem);
+}
+.turingInfo{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: row;
+}
+.turingState, .turingTitle, .turingName{
+  color:white;
+}
+.turingStep{  user-select:none;}
+.turingState.running{  color:teal;}
+.turingState.stopped{  color:navajowhite;}
+.turingState.accepted{  color:lime;}
+.turingState.rejected{  color:red;}
