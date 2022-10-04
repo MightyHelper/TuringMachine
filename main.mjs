@@ -90,7 +90,7 @@ function TuringMachine(elem, w, deltamap){
     }
     this.advanceUntilEnd = ()=>{
         this.machineState = 'running'
-        let [changedState, moved] = this.advanceState()
+        let [changedState, moved] = this.advanceState() 
         if (changedState || moved){
             setTimeout(this.advanceUntilEnd.bind(this), 75)
         }else{

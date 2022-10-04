@@ -77,4 +77,5 @@ window.addEventListener('DOMContentLoaded', ()=>{
     window.createTuringMachine("ww", 1, "10011001", deltamap)
     window.createTuringMachine("ww2", 1, "01100110", deltamap)
     window.createTuringMachine("ww3", 1, "0110010", deltamap)
+    window.createTuringMachine("ww4", 1, "101010111000101010111000", deltamap)
 })

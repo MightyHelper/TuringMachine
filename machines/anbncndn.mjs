@@ -20,4 +20,5 @@ let deltamap={
 }
 window.addEventListener('DOMContentLoaded', ()=>{
     window.createTuringMachine("anbncndn", 1, "aaaabbbbccccdddd", deltamap)
+    window.createTuringMachine("anbncndn2", 1, "aaaabbbbcccdddd", deltamap)
 })
