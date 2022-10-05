@@ -1,0 +1,9 @@
+Init:
+ 1 > * ToEnd(DelChar)
+
+ToEnd finalState:
+ 1 >   ToEnd(finalState)
+ & >   ToEnd(finalState)
+ # >   finalState
+
+
