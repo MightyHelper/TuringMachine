@@ -1,9 +1,15 @@
 Init:
  1 > * ToEnd(DelChar)
 
+DelChar:
+ 1 < * -
+ 
+
 ToEnd finalState:
  1 >   ToEnd(finalState)
  & >   ToEnd(finalState)
- # >   finalState
+ # <   finalState
 
-
+Skipping <D> {V} finalState:
+ V D   Skipping D V finalState
+ v -   finalState
